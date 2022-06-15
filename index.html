@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>PHP - Test WebSocket</title>
+
+        <script>
+            var socket = null;
+
+            function connect()
+            {
+                socket = new WebSocket("ws://127.0.0.1:8080/chat");
+                socket.onopen = function(event) {
+                    alert("Connected");
+                    socket.send("Hello server !");
+                };
+
+                socket.onmessage = function (event) {
+                    alert(event.data);
+                };
+
+                socket.onclose = function(event) {
+                    alert("Connection lost");
+                };
+            }
+
+            connect();
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

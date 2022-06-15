@@ -1,0 +1,15 @@
+{
+    "name": "phpwebsocket/app",
+    "require": {
+        "php": ">=5.3",
+        "cboden/ratchet": "^0.4.4",
+        "ratchet/pawl": "^0.4.1",
+        "php-mqtt/client": "^1.3"
+    },
+    "authors": [
+        {
+            "name": "",
+            "email": "email@mail.com"
+        }
+    ]
+}
